@@ -1,15 +1,25 @@
-.base {
+/* .base {
   background: rgb(31, 207, 207);
   margin-top: 5vh;
   border: 2px solid black;
   margin: 5px 5px 10px 5%;
   width: 80%;
-}
+} */
+
+.calculator
+  {
+    width: 100%;
+    background-color: beige;
+    margin-top: 5vh;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5% 0 ;
+  }
 
 .maindisplay {
 background: beige;
   height: 20vh;
-  padding: 5% !important;
+  /* padding: 5% !important; */
   font-size: 4rem;
   text-align: right;
   font-family: Courier, monospace;

@@ -9,7 +9,6 @@ import { TypeCalc } from './models/enums/typeCalculator.model';
 export class AppComponent {
   title = 'calculator0821';
 
-
   public dataCalcList: {typeName: TypeCalc; icon: string; isOn: boolean; routerLink: string}[] =
   [
     {typeName: TypeCalc.classic,icon: 'bug',  isOn: true, routerLink: 'classic'},

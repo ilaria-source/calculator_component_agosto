@@ -10,6 +10,30 @@
     </li>
 
     <li class="nav-item">
+              <ion-tab-button *ngFor="let item of dataCalcList" >
+
+                <ng-container *ngIf='item.isOn === true' >
+                  <ion-tab-button tab='{{item.routerLink}}'>
+                  </ion-tab-button>
+                  <button routerLink='{{item.routerLink }}'
+                class="m-1 btn btn-light btn-outline-primary" Button> {{item.routerLink }}</button>
+                </ng-container>
+
+                <ng-container *ngIf='item.isOn === false' >
+                  <ion-tab-button tab='{{item.routerLink}}' disabled>
+                    <button routerLink='{{item.routerLink }}'
+                 class="m-1 btn btn-light btn-outline-primary" Button> {{item.routerLink }}</button>
+                  </ion-tab-button>
+                </ng-container>
+
+                <!-- <button routerLink='{{item.routerLink }}'
+                class="m-1 btn btn-light btn-outline-primary" Button> {{item.routerLink }}</button> -->
+
+              </ion-tab-button>
+</li>
+
+<!--
+    <li class="nav-item">
       <button routerLink="classic"
       class="m-1 btn btn-light btn-outline-primary" Button>Classic</button>
     </li>
@@ -22,7 +46,7 @@
     <li class="nav-item">
       <button routerLink="programmer"
       class="m-1 btn btn-light btn-outline-primary" Button>Programmer</button>
-    </li>
+    </li> -->
 
   </ul>
 
