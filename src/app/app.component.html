@@ -4,54 +4,25 @@
   <nav class="navbar navbar-expand-sm bg-light navbar-dark">
 
     <ul class="navbar-nav">
-    <li class="nav-item">
-      <button routerLink="home"
-      class="m-1 btn btn-light btn-outline-primary" Button>Home</button>
-    </li>
+      <li class="nav-item">
+        <button routerLink="home"
+        class="m-1 btn btn-light btn-outline-primary" Button>Home</button>
+      </li>
 
-    <li class="nav-item">
-              <ion-tab-button *ngFor="let item of dataCalcList" >
+      <li class="nav-item">
+        <ion-tab-button *ngFor="let item of dataCalcList" >
 
-                <ng-container *ngIf='item.isOn === true' >
-                  <ion-tab-button tab='{{item.routerLink}}'>
-                  </ion-tab-button>
-                  <button routerLink='{{item.routerLink }}'
-                class="m-1 btn btn-light btn-outline-primary" Button> {{item.routerLink }}</button>
-                </ng-container>
+          <ng-container *ngIf='item.isOn === true' >
+            <button routerLink='{{item.routerLink }}' class="m-1 btn btn-light btn-outline-primary" Button> {{item.routerLink }}</button>
+          </ng-container>
 
-                <ng-container *ngIf='item.isOn === false' >
-                  <ion-tab-button tab='{{item.routerLink}}' disabled>
-                    <button routerLink='{{item.routerLink }}'
-                 class="m-1 btn btn-light btn-outline-primary" Button> {{item.routerLink }}</button>
-                  </ion-tab-button>
-                </ng-container>
+          <ng-container *ngIf='item.isOn === false' > <!-- ho provato con disabled dopo button ma non va, ho risolto levando il routerLink -->
+            <button routerLink='{{item.routerLink}}' class="m-1 btn btn-primary" disabled> {{item.routerLink }} </button>
+          </ng-container>
 
-                <!-- <button routerLink='{{item.routerLink }}'
-                class="m-1 btn btn-light btn-outline-primary" Button> {{item.routerLink }}</button> -->
-
-              </ion-tab-button>
-</li>
-
-<!--
-    <li class="nav-item">
-      <button routerLink="classic"
-      class="m-1 btn btn-light btn-outline-primary" Button>Classic</button>
-    </li>
-
-    <li class="nav-item">
-      <button routerLink="scientific"
-      class="m-1 btn btn-light btn-outline-primary" Button>Scientific</button>
-    </li>
-
-    <li class="nav-item">
-      <button routerLink="programmer"
-      class="m-1 btn btn-light btn-outline-primary" Button>Programmer</button>
-    </li> -->
-
-  </ul>
-
+        </ion-tab-button>
+      </li>
+    </ul>
   </nav>
-
 <router-outlet></router-outlet>
-
 </div>
