@@ -1,4 +1,4 @@
-.form-group
+#calcform
 {
   width: 100%;
   padding: 10px;
@@ -6,7 +6,7 @@
   margin: 5% 10 ;
   background-color: #f8ead4;
 }
-.form-group
+#hex, #dec, #oct, #bin
 {
   background-color: #d7ecf8;
 }
