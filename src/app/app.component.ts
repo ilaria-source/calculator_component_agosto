@@ -9,12 +9,12 @@ import { TypeCalc } from './models/enums/typeCalculator.model';
 export class AppComponent {
   title = 'calculator0821';
 
-  public dataCalcList: {typeName: TypeCalc; icon: string; isOn: boolean; routerLink: string}[] =
+  public dataCalcList: {typeName: TypeCalc; isOn: boolean; routerLink: string}[] =
   [
-    {typeName: TypeCalc.classic,icon: 'bug',  isOn: true, routerLink: 'classic'},
-    {typeName: TypeCalc.scientific,icon: 'construct',  isOn: true, routerLink: 'scientific'},
-    {typeName: TypeCalc.programmer,icon: 'save',  isOn: false, routerLink: 'programmer'}
+    {typeName: TypeCalc.classic, isOn: true, routerLink: 'classic'},
+    {typeName: TypeCalc.scientific,  isOn: true, routerLink: 'scientific'},
+    {typeName: TypeCalc.programmer,  isOn: true, routerLink: 'programmer'},
+    {typeName: TypeCalc.programmer,  isOn: false, routerLink: 'tasto disabilitato'}
   ];
-
 
 }
