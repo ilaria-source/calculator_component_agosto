@@ -15,12 +15,12 @@ export class ProgrammerComponent implements OnInit {
     //converte in decimale
     //richiama le funzioni che partono da decimale
   }
-  fromDec(num: number)
+  fromDec(num: string)
   {
     //richiama le funzioni da decimale es  decToHexa(num)
   }
 
-  fromOct(num: number)
+  fromOct(num: string)
   {
     //converte in decimale
     //richiama le funzioni che partono da decimale
